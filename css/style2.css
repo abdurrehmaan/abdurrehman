@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --maincolor: #0A192F;
+    --maintextcolor: #CCD6F6;
+    --paragraphcolor: #8892B0;
+    --heading-color: #4ec8b1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#left-container{
+    background-color: var(--maincolor);
+    height: 100vh;
+
+}
+
+#center-container{
+    background-color: var(--maincolor);
+    /* background-color: green; */
+    height: 100vh;
+    padding: 0px;
+
+}
+
+#Right-container{
+    background-color: var(--maincolor);
+    height: 100vh;
+
+}
+
+.navbar{
+    background-color: var(--maincolor);  
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    color: var(--heading-color);
+    font-size: 16px;
+}
+.navbar .logo a span{
+    text-decoration: none;
+    color: var(--maintextcolor);
+    font-size: 18px;
+}
+.navbar .logo a span:hover{
+    color: var(--heading-color);
+}
+.navbar .navbar-nav li {
+    margin: 5px;
+
+}
+.navbar .navbar-nav li a{
+    color: var(--maintextcolor);
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.navbar .navbar-nav li a:hover{
+    color: var(--heading-color);
+}
+.navbar .navbar-nav li a span{
+    color: var(--heading-color);
+    font-size: 12px;
+}
+
+#navbarSupportedContent > form > button {
+    border-radius: 3px;
+    color: var(--heading-color);
+    padding: 5px 10px 5px 10px;
+    border: 1px solid var(--heading-color);
+}
+
+#navbarSupportedContent > form > button:hover{
+    color: var(--maintextcolor);
+    background-color: rgba(78, 200, 177, 0.1);
+
+}
+
+.social-media-icon {
+    color: var(--maintextcolor);
+    margin: 12rem 0 0 0;
+    padding: 50px;
+    float: right;
+    list-style: none;
+}
+.hrow{
+    height: 10px;
+    background-color: var(--maintextcolor);
+    transform: rotate(90deg);
+    margin: 20rem 5rem 0 0 ;
+}
+.social-media-icon li:hover{
+    color: var(--heading-color);
+}
+
+
+
