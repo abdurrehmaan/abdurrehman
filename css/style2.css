@@ -54,6 +54,7 @@
 }
 .navbar .navbar-nav li {
     margin: 5px;
+    
 
 }
 .navbar .navbar-nav li a{
@@ -61,13 +62,19 @@
     font-size: 12px;
     text-decoration: none;
     letter-spacing: 1px;
+    border: 2px solid var(--maincolor);
 }
 .navbar .navbar-nav li a:hover{
     color: var(--heading-color);
+    
+}
+.navbar .navbar-nav li a:active{
+    border: 2px dashed var(--heading-color);
 }
 .navbar .navbar-nav li a span{
     color: var(--heading-color);
     font-size: 12px;
+    
 }
 
 #navbarSupportedContent > form > button {

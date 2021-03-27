@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+    --maincolor: #0A192F;
+    --maintextcolor: #CCD6F6;
+    --paragraphcolor: #8892B0;
+    --heading-color: #4EC8B1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+ol li {
+    list-style: none;
+}
+
+#left-container{
+    background-color: var(--maincolor);
+    height: 100vh;
+
+}
+
+#center-container{
+    background-color: green;
+    /* background-color: var(--maincolor); */
+    height: 100vh;
+
+}
+
+#Right-container{
+    background-color: var(--maincolor);
+    height: 100vh;
+
+}
+
+.mynavbar{
+    position: fixed;
+    width: 100%;
+    background-color: var(--maincolor);
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.logo {
+   margin: 0 0 0 150px;
+
+}
+
+.mynavbar .logo a {
+    text-decoration: none;
+    color: var(--paragraphcolor);
+    font-size: 12px;
+ 
+}
+.mynavbar .logo a span {
+    text-decoration: none;
+    color: var(--paragraphcolor);
+    font-size: 18px;
+
+}
+.mynavmenu ol{
+    display:flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+
+.mynavmenu ol li{
+
+    padding: 10px;
+    margin: 3px;
+    letter-spacing: 1px;
+}
+.mynavbar .mynavmenu li a {
+    color: var(--maintextcolor);
+    font-size: 12px;
+    text-decoration: none;
+    
+}
+.mynavbar .mynavmenu li a span {
+    color: var(--heading-color);
+    font-size: 12px;
+}
+
+.mynavbar .mynavmenu li a:hover {
+    color: var(--heading-color)
+}
+
+
+
+
+
+
+
+
+
+
+
