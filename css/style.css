@@ -15,34 +15,46 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+ul{
+    list-style: none;
+}
 /* #main-container{
     position: relative;
 } */
 .main-body{
     display: flex;
     justify-content: space-between;
-
+    background-color: var(--maincolor);
 }
 
 .left-container{
     width:15%;
-    background-color: var(--maincolor);
+    /* background-color: var(--maincolor); */
     height: 100vh;
     position:fixed;
 
 }
 .main-container{
-    background-color: var(--maincolor);
+    /* background-color: var(--maincolor); */
     width: 70%;
-    height: 100px;
+    height: 100vh;
     margin-left: 17.8rem;
+    
 }
 .right-container{
-    background-color: var(--maincolor);
+    /* background-color: var(--maincolor); */
     width: 15%;
     height: 100vh;
     position: fixed;
-    margin-left: 85%;
+    margin-left: 85%;   
+}
+
+.right-container p {
+    color: var(--maintextcolor);
+    transform: rotate(90deg);
+    margin-top: 36rem;
+    letter-spacing: 2px;
+    font-size: 12px;
 }
 
 .navbar{
@@ -51,13 +63,27 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: wheat;
+    
 }
+
+.navbar .logo a {
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+.navbar .logo a span {
+    text-decoration: none;
+    color: var(--paragraphcolor);
+    font-size: 18px;
+}
+
+.navbar .logo a span:hover{
+    color: var(--heading-color);
+}
+
 .navbar .menu ul {
     list-style: none;
     display: flex;
-    
-
 }
 .navbar .menu ul li{
     padding: 10px;
@@ -71,8 +97,6 @@
     padding: 7px;
     letter-spacing: 1px;
     border: 2px solid var(--maincolor);
-  
-
 }
 .navbar .menu ul li a span{
     color: var(--heading-color);
@@ -87,4 +111,59 @@
     padding: 7px;
     border: 2px dashed var(--heading-color);
 }
+
+.social-media-icon{
+    color: var(--maintextcolor); 
+    text-align: right;
+    margin-top: 30rem;
+}
+.social-media-icon ul li {
+    margin: 20px;
+}
+
+.basic-info{
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10rem;
+}
+
+.basic-info .span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+.basic-info h1{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: -15px;
+    color: var(--maintextcolor);
+}
+.basic-info h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--paragraphcolor);
+}
+
+.basic-info .para {
+    width: 70%;
+    /* border: 2px solid white; */
+    color: var(--maintextcolor);
+}
+.basic-info .para span {
+    color: var(--heading-color);
+}
+
+.basic-info input {
+    padding: 10px 20px 10px 20px;
+    background-color: var(--maincolor);
+    color: var(--maintextcolor);
+    border: 2px solid var(--heading-color);
+    border-radius: 4px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
 
