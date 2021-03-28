@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
+/* :root {
+    --maincolor: #fff;
+    --maintextcolor: #335C67;
+    --paragraphcolor: #5B9CAE;
+    --heading-color: #9E2A2B;
+} */
 :root {
     --maincolor: #0A192F;
     --maintextcolor: #CCD6F6;
@@ -14,7 +20,9 @@
     box-sizing: border-box;
     font-family: 'Noto Sans JP', sans-serif;
 }
-
+body{
+    background-color: var(--maincolor);
+}
 ul{
     list-style: none;
 }
@@ -29,20 +37,20 @@ ul{
 
 .left-container{
     width:15%;
-    /* background-color: var(--maincolor); */
+    background-color: var(--maincolor);
     height: 100vh;
     position:fixed;
 
 }
 .main-container{
-    /* background-color: var(--maincolor); */
+    background-color: var(--maincolor);
     width: 70%;
     height: 100vh;
     margin-left: 17.8rem;
     
 }
 .right-container{
-    /* background-color: var(--maincolor); */
+    background-color: var(--maincolor);
     width: 15%;
     height: 100vh;
     position: fixed;
@@ -54,7 +62,32 @@ ul{
     transform: rotate(90deg);
     margin-top: 36rem;
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 1.5rem;
+}
+
+.right-container p:hover{
+    color: var(--heading-color);
+    font-size: 1.6rem; 
+    transition: 0.1s ease-in-out;
+    
+}
+
+/* left container social media icon */
+.social-media-icon{
+    color: var(--maintextcolor); 
+    text-align: center;
+    margin-top: 35rem;
+}
+.social-media-icon ul li :hover {
+    color: var(--heading-color);
+    transform: scale(1.2);
+    
+}
+
+.social-media-icon ul li i{
+    font-size: 2rem;
+    margin: 10px;
+
 }
 
 .navbar{
@@ -69,12 +102,14 @@ ul{
 .navbar .logo a {
     text-decoration: none;
     color: var(--heading-color);
+    /* border: 2px solid white; */
+    font: 1.5rem;
 }
 
 .navbar .logo a span {
     text-decoration: none;
     color: var(--paragraphcolor);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navbar .logo a span:hover{
@@ -112,18 +147,23 @@ ul{
     border: 2px dashed var(--heading-color);
 }
 
-.social-media-icon{
-    color: var(--maintextcolor); 
-    text-align: right;
-    margin-top: 30rem;
+.navbar .button input {
+    padding: 10px 20px 10px 20px;
+    background-color: var(--maincolor);
+    color: var(--maintextcolor);
+    border: 2px solid var(--heading-color);
+    border-radius: 4px;
+    /* margin-top: 20px; */
+    letter-spacing: 2px;
 }
-.social-media-icon ul li {
-    margin: 20px;
+.navbar .button input:hover{
+    background-blend-mode: color;
 }
 
+/* Basic Info  */
 .basic-info{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -133,6 +173,8 @@ ul{
 .basic-info .span{
     font-size: 2rem;
     font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 4px;
     color: var(--heading-color);
 }
 .basic-info h1{
@@ -150,7 +192,8 @@ ul{
 .basic-info .para {
     width: 70%;
     /* border: 2px solid white; */
-    color: var(--maintextcolor);
+    color: var(--paragraphcolor);
+    line-height: 1.7rem;
 }
 .basic-info .para span {
     color: var(--heading-color);
@@ -167,3 +210,101 @@ ul{
 }
 
 
+/* Basic Info Ends here */
+.about-section {
+
+    width: 100%;
+    height: 100vh;
+    background-color: var(--maincolor);
+    display: flex;
+}
+/* About Section */
+
+.about-section .p-info{
+    width:60%;
+    padding: 10rem;
+    display: block;
+
+}
+.about-section .p-info h1 span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    color: var(--heading-color);
+}
+
+.about-section .p-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -15px;
+    color: var(--heading-color);
+}
+.about-section .p-info p span{
+    color: var(--heading-color);
+    font-size: 1rem;
+}
+
+.about-section .p-info p {
+    color: var(--paragraphcolor);
+    margin-top: 30px;
+}
+
+.about-section .p-info .tools {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0 0 -3rem;
+}
+
+.about-section .p-info .tools ul {
+    margin: 0 100px;
+    color: var(--paragraphcolor);
+    list-style-type:circle;
+}
+.about-section .p-image{
+    width:40%;
+    padding: 1rem;
+    display: block;
+    background-color: var(--maincolor);
+
+}
+.about-section .abdur-rehman-image{
+    margin-top: 13rem;
+    position:absolute;
+    width:  300px;
+    height: 300px;
+    /* border: 5px solid var(--heading-color); */
+    background-color: var(--heading-color);
+    border-radius: 10px;
+}
+
+.about-section .image-border{
+    width: 300px;
+    height: 300px;
+    border: 3px solid var(--heading-color);
+    border-radius: 10px;
+    background-color: var(--maincolor);
+    margin-top: 14rem;
+    margin-left: 1rem;
+}
+
+
+.about-section .p-image .abdur-rehman-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5 ease;
+    backface-visibility: hidden;
+    opacity: 0.6;  
+    border-radius: 10px;
+}
+
+.about-section .p-image img:hover {
+    opacity: 1;
+}
+
+.about-section .abdur-rehman-image:hover ~.image-border {
+   margin-top: 13.8rem;
+   margin-left: 0.8rem;
+   transition: 0.3s ease-in-out;
+}
