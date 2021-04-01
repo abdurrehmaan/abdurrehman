@@ -36,31 +36,31 @@ ul{
 }
 
 .left-container{
-    width:15%;
-    background-color: var(--maincolor);
+    width:10%;
+    /* background-color: var(--maincolor); */
     height: 100vh;
     position:fixed;
 
 }
 .main-container{
-    background-color: var(--maincolor);
-    width: 70%;
+    /* background-color: var(--maincolor); */
+    width: 80%;
     height: 100vh;
-    margin-left: 17.8rem;
+    margin-left: 8.5rem;
     
 }
 .right-container{
-    background-color: var(--maincolor);
-    width: 15%;
+    /* background-color: var(--maincolor); */
+    width: 10%;
     height: 100vh;
     position: fixed;
-    margin-left: 85%;   
+    margin-left: 90%;   
 }
 
 .right-container p {
     color: var(--maintextcolor);
     transform: rotate(90deg);
-    margin-top: 36rem;
+    margin-top: 15rem;
     letter-spacing: 2px;
     font-size: 1.5rem;
 }
@@ -76,7 +76,7 @@ ul{
 .social-media-icon{
     color: var(--maintextcolor); 
     text-align: center;
-    margin-top: 35rem;
+    margin-top: 15rem;
 }
 .social-media-icon ul li :hover {
     color: var(--heading-color);
@@ -90,6 +90,7 @@ ul{
 
 }
 
+/* navbar  */
 .navbar{
     width: 100%;
     height: 80px;
@@ -121,13 +122,13 @@ ul{
     display: flex;
 }
 .navbar .menu ul li{
-    padding: 10px;
-    margin: 3px;
+    padding: 5px;
+    
 }
 
 .navbar .menu ul li a {
     color: var(--maintextcolor);
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: none;
     padding: 7px;
     letter-spacing: 1px;
@@ -135,7 +136,7 @@ ul{
 }
 .navbar .menu ul li a span{
     color: var(--heading-color);
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .navbar .menu ul li a:hover{
@@ -164,17 +165,17 @@ ul{
 .basic-info{
     width: 100%;
     height: 80vh;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     margin-top: 50px;
-    padding: 10rem;
+    margin-left: 100px;
+    padding: 5rem;
 }
 
 .basic-info .span{
     font-size: 2rem;
-    font-weight: 600;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    word-spacing: 4px;
+    /* letter-spacing: 2px; */
     color: var(--heading-color);
 }
 .basic-info h1{
